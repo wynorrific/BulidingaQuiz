@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="freeCodeCamp Accessibility Quiz practice project" />
+    <title>Accessibility Quiz</title>
+    <link rel="stylesheet" href="BulidingaQuiz.css">
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="data:image/png;base64,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">
+      <h1>HTML/CSS Quiz</h1>
+      <nav>
+        <ul>
+            <li><a href="#student-info" accesskey="i">INFO</a></li>
+          <li><a href="#html-questions"accesskey="h" >HTML</a></li>
+          <li><a href="#css-questions" accesskey="c" >CSS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+        <section role="region" aria-labelledby="student-info">
+          <h2 id="student-info">Student Info</h2>
+          <div class='info'><label for="student's name"> name</label><input id="student's name" type='name' name='name' placeholder="name"></input></div>
+          <div class='info'><label for='email address'>email address</label><input id='email address' type='email' name='email'></input></div>
+          <div class='info'><label for='date of birth'>date of birth<span class='sr-only'>(Date of Birth)</span></label><input id='date of birth' type='date' name='date'></input></div>
+        </section>
+        <section role="region" aria-labelledby="html-questions">
+          <h2 id="html-questions">HTML</h2>
+        <div class='question-block'><p>1</p><fieldset class='question'>
+            <legend> A label element nesting an input element is required to have a
+                for attribute with the same value as the input's id</legend>
+            <ul class='answers-list'>
+              <li><label for='q1-a1'><input  type='radio' id='q1-a1' value="true" name="a1" />True</label></li>
+              <li><label for='q1-a2'><input  type='radio' id='q1-a2' value="false" name="a1" />False</label></li>
+             </ul>
+            </fieldset>
+        </div>
+        <div class='question-block'><p>2</p><fieldset class='question'>
+            <legend> The legend element represents a caption for the content of its
+                parent fieldset element</legend>
+            <ul class='answers-list'>
+              <li><label for='q2-a1'><input  type='radio' id='q2-a1' value="true" name="q1" />True</label></li>
+              <li><label for='q2-a2'><input  type='radio' id='q2-a2' value="false" name="q1"/>False</label></li>
+            </ul>
+          </fieldset>
+        </div>
+        </section>
+        <section role="region" aria-labelledby="css-questions">
+          <h2 id="css-questions">CSS</h2>
+          <div class='formrow'>
+            <div class='question-block'><label for="select">Are you a frontend developer?</label></div>
+            <div class='answer'>
+              <select name='select' id='select' required>
+              <option value=''>Select an option</option>
+              <option value='yes'>Yes</option>
+              <option value='no'>No</option>
+              </select>
+            </div>
+            <div class='question-block'><label for='question'>Do you have any questions:</label></div>
+            <div class='answer'><textarea id='question' name='question' rows="5" cols="24" placeholder="Who is flexbox..."></textarea></div>
+          </div>
+        </section>
+        <button type="submit">Send</button>
+      </form>
+      <footer>
+        <address>
+          <a href="https://www.instagram.com/___the_5_am_club___/">My instagram</a><br />
+          San Francisco<br />
+          California<br />
+          USA
+        </address>
+      </footer>
+    </main>
+  </body>
+</html>
